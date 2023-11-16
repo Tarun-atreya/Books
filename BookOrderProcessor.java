@@ -1,12 +1,13 @@
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class BookOrderProcessor {
-    private Queue<BookOrder> orderQueue;
+    private PriorityQueue<BookOrder> orderQueue;
 
     // Constructor to initialize the orderQueue
     public BookOrderProcessor() {
-        orderQueue = new LinkedList<BookOrder>();
+        orderQueue = new PriorityQueue<BookOrder>();
     }
 
     // Your implementation for enqueueOrder method here
