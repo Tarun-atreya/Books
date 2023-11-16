@@ -20,9 +20,9 @@ public class BookOrder implements Comparable<BookOrder> {
     @Override
     public int compareTo(BookOrder arg0) {
         if(this.quantity > arg0.getQuantity())
-            return 1;
-        else if(this.quantity < arg0.getQuantity())
             return -1;
+        else if(this.quantity < arg0.getQuantity())
+            return 1;
         else
             return 0;
     }
